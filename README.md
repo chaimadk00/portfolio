@@ -1,61 +1,97 @@
-# Responsive Portfolio - Chaima Dokkar
 
-**Student name:** Chaima Dokkar  
-**Module:** WAMD - TD/TP 1, ENSTA (Higher National School of Advanced Technologies), First Semester 2026  
-**Specialty:** Computer Science, Artificial Intelligence (4th year)  
+# WAMD - TD/TP 1: Responsive Portfolio
 
-## Project description
+**Institution:** Higher National School of Advanced Technologies (ENSTA)  
+**Program:** Computer Science (AI Specialty) - Semester 1, 2026  
+**Module:** WAMD (Web Application Modeling & Development)  
+**Instructor:** Dr. S. Senhadji  
 
-A modern, responsive personal portfolio website designed for Chaima Dokkar. The site presents biographical background, academic journey, technical skills, deployed projects, hands-on experience, and an interactive contact form. The layout adapts seamlessly across desktop, tablet, and smartphone screens. It is built with clean, semantic HTML5, modern CSS3 (with custom variables and grid layouts), and vanilla ES6 JavaScript.
+---
 
-## Technologies used
+## Student Information
 
-- **HTML5**: semantic elements (`header`, `nav`, `main`, `section`, `article`, `address`, `footer`, `time`)
-- **CSS3**: custom properties (variables), Flexbox, CSS Grid, media queries, keyframe animations, glassmorphism, micro-interactions
-- **JavaScript (ES6)**: DOM manipulation, event handling, `IntersectionObserver` for animated progress bars and dynamic navigation
-- **Visual Studio Code**: code editor
-- **Google Chrome DevTools**: inspecting, debugging and responsive testing
-- **Git & GitHub**: version control
+- **Name:** Chaima Dokkar
+- **Level:** 4th Year Engineering Student (Cycle Supérieur - Artificial Intelligence)
+- **Email:** ac.dokkar@ensta.edu.dz
+- **GitHub:** [https://github.com/chaimadk00](https://github.com/chaimadk00)
+- **Live Demo:** [https://chaimadk00.github.io/portfolio/](https://chaimadk00.github.io/portfolio/) *(if deployed)*
 
-## Implemented features
+---
 
-- **Hero / Landing**: Name, AI engineering title, live availability status indicator badge, quick social links, and stylized avatar preview.
-- **About Me**: Academic background at ENSTA (Preparatory Classes & Superior Engineering Cycle), key statistics counters, and CV download trigger.
-- **Skills & Technologies**:
-  - Animated progress bars for core programming languages (Python, C/C++, Java, JavaScript/TypeScript, SQL, HTML5/CSS3).
-  - Categorized skill cards for Artificial Intelligence, Web Development, and DevOps/Tools (Git, GitHub, Jira, Agile/Scrum, Docker, Linux).
-- **Featured Projects**:
-  - Interactive category filtering (All, Web, AI).
-  - Cards featuring *ShopHub* (Arabic RTL marketplace), *Strwebery* (E-commerce with Algerian Cash-on-Delivery), and *Intelligent RAG & AI Agent System*.
-- **Education & Experience**:
-  - **2025 – Present**: Cycle Supérieur (Superior Class) in Computer Science — Artificial Intelligence Specialty (ENSTA).
-  - **2023 – 2025**: Classes Préparatoires (Preparatory Classes) in Computer Science & STEM (ENSTA).
-  - **Experience**: Internship at Algerian Space Agency (ASAL) and hands-on AI & web engineering projects.
-- **Contact Form & Validation**:
-  - Client-side validation with real-time feedback and accessibility attributes.
-  - Success alert notification upon submission.
-- **Mobile Responsive Design**: Clean collapsible hamburger navigation on smaller screens.
+## Project Overview
 
-## Project structure
+This repository contains my personal portfolio website built for TP 1 of the WAMD course. The goal of this assignment is to design and develop a responsive website from scratch using pure HTML5, CSS3, and vanilla JavaScript without relying on external frontend frameworks.
 
-```
+The portfolio introduces my profile, background at ENSTA, technical skill set, recent web and AI projects, academic timeline, and contact information.
+
+---
+
+## Technologies Used
+
+- **HTML5:** Semantic tags (`header`, `nav`, `main`, `section`, `article`, `address`, `time`, `footer`).
+- **CSS3:** Flexbox, CSS Grid, custom CSS variables, media queries for responsive breakpoints, keyframe animations, and transitions.
+- **JavaScript (ES6):** Vanilla DOM manipulation, event listeners (mobile navigation toggle, resize handling), and `IntersectionObserver` for scroll-triggered animations.
+- **Tools:** Visual Studio Code, Git, GitHub, and browser DevTools for debugging and testing responsiveness across device sizes.
+
+---
+
+## Implemented Features
+
+### 1. Navigation & Header
+- Sticky navbar with blur backdrop that remains accessible during scrolling.
+- Real-time scroll indicator bar along the bottom of the header showing page read progress.
+- Active link highlighting (scrollspy) based on the section currently visible on screen.
+- Collapsible hamburger navigation menu for mobile screens (closes automatically on link click or Escape key).
+
+### 2. Hero Section
+- Dynamic interactive background grid that generates tiles based on screen dimensions and highlights tiles on hover.
+- Full-screen height (`100dvh`) adapted for both desktop and mobile devices.
+- Introduction with quick access call-to-action buttons (view projects / contact) and social links.
+
+### 3. About Me
+- Summary of my background at ENSTA (transition from 2-year preparatory classes to the AI engineering cycle).
+- Key stats and a direct link to download my CV (`files/cv.pdf`).
+
+### 4. Skills & Technologies
+- Core programming skill bars (Python, C, Java, JavaScript/TypeScript, SQL, HTML/CSS) that animate into place when the section is reached.
+- Categorized badges for:
+  - **AI & Data Science:** ML, Pandas, NumPy, LLM Agents, RAG, Algorithms.
+  - **Web Development:** React, Next.js, tRPC, PostgreSQL, Redis, Tailwind CSS.
+  - **Tools & Workflow:** Git, GitHub, Jira, VS Code, Postman, Linux CLI.
+
+### 5. Projects
+- Project showcase cards featuring descriptions, tech stacks, live deployment links, and GitHub repositories:
+  - **ShopHub:** An Arabic RTL marketplace platform built with Next.js, React, tRPC, Redis, and PostgreSQL.
+  - **Strwebery:** E-commerce platform for an Algerian modest fashion brand with order tracking and an admin dashboard.
+
+### 6. Education & Experience
+- Chronological timeline covering:
+  - Preparatory Classes in CS & STEM at ENSTA (2023 - 2025).
+  - Superior Engineering Cycle in CS / Artificial Intelligence at ENSTA (2025 - Present).
+  - Technical Internship at the Algerian Space Agency (ASAL).
+
+### 7. Contact Section
+- Contact card listing direct communication channels: institutional email, phone number, location, GitHub, and LinkedIn profiles.
+
+### 8. Responsive Design & Smooth Transitions
+- Built to display properly on desktop, tablet, and mobile devices using CSS media queries and relative units (`clamp()`, `rem`, `%`).
+- Smooth scrolling behavior across all anchor links.
+- Subtle fade-in animations on sections using `IntersectionObserver`.
+- Accessibility considerations: high-contrast text, visible focus outlines, and `prefers-reduced-motion` support.
+
+---
+
+## Project Structure
 portfolio/
-├── index.html         # Main HTML page
-├── README.md          # Documentation
+├── index.html          # Main HTML document
+├── README.md           # Project documentation
 ├── css/
-│   └── style.css      # Custom styling, responsive layout, animations
+│   └── style.css       # Styles, layout, variables, and media queries
 ├── js/
-│   └── script.js      # Interactivity, menu, filters, form validation
-├── images/            # Vector illustrations (profile.svg, project1.svg, project2.svg, project3.svg)
-├── files/             # Documents (cv.pdf)
-└── screenshots/       # Project screenshots
-```
-
-## How to run
-
-Simply open `index.html` in any modern web browser:
-
-```bash
-# Double click index.html or open via terminal:
-start index.html
-```
+│   └── script.js       # Navigation, tile grid logic, and scroll observers
+├── images/             # Profile illustration and project screenshots
+│   ├── pic3. Vector illustration Isolated On White_
+│   ├── image.png
+│   └── pic2.png
+└── files/
+    └── cv.pdf          # Curriculum Vitae
