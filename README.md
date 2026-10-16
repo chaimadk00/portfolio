@@ -3,7 +3,7 @@
 
 **Institution:** Higher National School of Advanced Technologies (ENSTA)  
 **Program:** Computer Science (AI Specialty) - Semester 1, 2026  
-**Module:** WAMD (Web Application Modeling & Development)  
+**Module:** WAMD 
 **Instructor:** Dr. S. Senhadji  
 
 ---
@@ -13,8 +13,8 @@
 - **Name:** Chaima Dokkar
 - **Level:** 4th Year Engineering Student (Cycle Supérieur - Artificial Intelligence)
 - **Email:** ac.dokkar@ensta.edu.dz
-- **GitHub:** [https://github.com/chaimadk00](https://github.com/chaimadk00)
-- **Live Demo:** [https://chaimadk00.github.io/portfolio/](https://chaimadk00.github.io/portfolio/) *(if deployed)*
+- **GitHub repo:** [https://github.com/chaimadk00/portfolio]
+- **Live Demo:** [https://chaimadk00.github.io/portfolio/]
 
 ---
 
