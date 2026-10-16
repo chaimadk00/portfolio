@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Chaima Dokkar - AI &amp; Software Engineering</title>
+  <meta name="description" content="Personal portfolio of Chaima Dokkar, 4th-year Computer Science student at ENSTA specializing in Artificial Intelligence and Web Technologies.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">Chaima Dokkar<span class="logo-dot">.</span></a>
+
+      <!-- Hamburger button for mobile devices -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        &#9776;
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero">
+      <!-- Background Interactive Tiles Grid -->
+      <div class="hero-tiles-container" id="hero-tiles" aria-hidden="true"></div>
+
+      <div class="hero-content">
+       
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>Chaima Dokkar</h1>
+        <p class="hero-title">Computer Science &amp; AI Engineering Student</p>
+        <p class="hero-tagline">
+          4th-year student at <strong>ENSTA</strong> specializing in Artificial Intelligence. Passionate about engineering intelligent systems, full-stack web applications, and turning complex problems into scalable digital solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact me</a>
+        </div>
+        <div class="hero-social-strip">
+          <a href="https://github.com/chaimadk00" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <span>GitHub</span> &rarr;
+          </a>
+          <a href="https://www.linkedin.com/in/dokkar-chaima-2b5a9b317" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <span>LinkedIn</span> &rarr;
+          </a>
+          <a href="mailto:ac.dokkar@ensta.edu.dz" aria-label="Send Email">
+            <span>ac.dokkar@ensta.edu.dz</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images\pic3. Vector illustration Isolated On White_" alt="Portrait of Chaima Dokkar" width="320" height="320" loading="eager">
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about reveal-on-scroll">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">Bridging algorithmic foundations, artificial intelligence, and modern web development.</p>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a Computer Science student at the <strong>Higher National School of Advanced Technologies (ENSTA)</strong> in Algeria. Having completed two rigorous years of intensive Preparatory Classes, I am now in the Superior Engineering Cycle specializing in <strong>Artificial Intelligence</strong>.
+          </p>
+          <p>
+            I enjoy building end-to-end applications: from algorithmic problem solving and AI models to responsive frontend interfaces and robust backend architectures. Alongside my academic coursework, I actively develop production-ready web platforms and explore autonomous AI agents.
+          </p>
+
+          <ul class="about-info">
+            <li><strong>Name:</strong> Chaima Dokkar</li>
+            <li><strong>Location:</strong> Algeria</li>
+            <li><strong>Email:</strong> <a href="mailto:ac.dokkar@ensta.edu.dz">ac.dokkar@ensta.edu.dz</a></li>
+            <li><strong>Current Status:</strong> Superior Cycle (4th Year), AI Specialty @ ENSTA</li>
+          </ul>
+
+          <a href="files\cv.pdf" class="btn btn-primary" download>Download my CV</a>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">4th</span>
+            <span class="stat-label">Year of CS Engineering, AI Specialty</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2023–25</span>
+            <span class="stat-label">Preparatory Classes Foundation Completed</span>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills reveal-on-scroll">
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <p class="section-intro">A balanced toolkit spanning programming languages, artificial intelligence, web frameworks, and collaborative developer tools.</p>
+
+      <div class="skills-grid">
+
+        <!-- 1. Core Programming -->
+        <article class="skill-category">
+          <div class="category-header">
+           
+            <h3>Core Programming</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill" data-level="85">
+              <div class="skill-header"><span>Python</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </li>
+            <li class="skill" data-level="80">
+              <div class="skill-header"><span>C </span><span class="skill-percent">65%</span></div>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </li>
+            <li class="skill" data-level="75">
+              <div class="skill-header"><span>Java</span><span class="skill-percent">40%</span></div>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </li>
+            <li class="skill" data-level="80">
+              <div class="skill-header"><span>JavaScript / TypeScript</span><span class="skill-percent">70%</span></div>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </li>
+            <li class="skill" data-level="75">
+              <div class="skill-header"><span>SQL (PostgreSQL)</span><span class="skill-percent">75%</span></div>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </li>
+            <li class="skill" data-level="85">
+              <div class="skill-header"><span>HTML5 &amp; CSS3</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- 2. AI & Data Science -->
+        <article class="skill-category">
+          <div class="category-header">
+           
+            <h3>AI &amp; Data Science</h3>
+          </div>
+          <p class="category-desc">Machine learning architectures, agentic pipelines, and data manipulation libraries.</p>
+          <ul class="skill-tags">
+            <li>Machine Learning</li>
+          
+            
+            <li>Pandas &amp; NumPy</li>
+            <li>LLM Agents</li>
+            <li>RAG Systems</li>
+           
+            <li>Data Structures &amp; Algorithms</li>
+           
+          </ul>
+        </article>
+
+        <!-- 3. Web & Full-Stack -->
+        <article class="skill-category">
+          <div class="category-header">
+          
+            <h3>Web &amp; Full-Stack</h3>
+          </div>
+          <p class="category-desc">Modern web application frameworks, state management, databases, and APIs.</p>
+          <ul class="skill-tags">
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>tRPC</li>
+            
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+            <li>Tailwind CSS</li>
+            <li>Responsive UI / UX</li>
+            <li>Vercel</li>
+           
+          </ul>
+        </article>
+
+        <!-- 4. Tools, DevOps & Management -->
+        <article class="skill-category">
+          <div class="category-header">
+            
+            <h3>Tools &amp; Workflow</h3>
+          </div>
+          <p class="category-desc">Version control, project management, developer tooling, and team collaboration.</p>
+          <ul class="skill-tags">
+            <li>Git</li>
+            <li>GitHub (PRs, Issues)</li>
+            <li>Jira (Agile &amp; Scrum)</li>
+            <li>VS Code</li>
+            <li>Postman (API Testing)</li>
+            <li>Linux / Bash CLI</li>
+            
+            <li>Sprint Planning</li>
+            <li>Kanban Boards</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects reveal-on-scroll">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-intro">A selection of web platforms and intelligent systems I have designed and deployed.</p>
+
+     
+
+      <div class="projects-grid">
+        <!-- Project 1: ShopHub -->
+        <article class="project-card" data-category="web">
+          <div class="project-image-wrap">
+            <img src="images\image.png" alt="Screenshot mockup of ShopHub Arabic Marketplace" loading="lazy" width="400" height="250">
+            <span class="project-badge">Web</span>
+          </div>
+          <div class="project-body">
+            <h3>ShopHub</h3>
+            <p>An Arabic-language (right-to-left) marketplace platform for querying products across multiple merchant stores in one unified portal, featuring popular categories from electronics to fashion.</p>
+            <ul class="project-tech">
+              <li>Next.js</li>
+              <li>React</li>
+              <li>tRPC</li>
+              <li>Redis</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://the-best-project.vercel.app/" class="btn btn-small btn-primary" target="_blank" rel="noopener">Live demo &rarr;</a>
+              <a href="https://github.com/chaimadk00/THE-BEST-PROJECT" class="btn btn-small btn-secondary" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Strwebery -->
+        <article class="project-card" data-category="web">
+          <div class="project-image-wrap">
+            <img src="images\pic2.png" alt="Screenshot mockup of Strwebery E-Commerce" loading="lazy" width="400" height="250">
+            <span class="project-badge">Web</span>
+          </div>
+          <div class="project-body">
+            <h3>Strwebery</h3>
+            <p>A full-featured e-commerce solution for an Algerian modest-fashion brand: comprehensive catalog by collection, order tracking, cash-on-delivery checkout, and an admin dashboard to manage inventory and sales.</p>
+            <ul class="project-tech">
+              <li>Next.js</li>
+              <li>React</li>
+              <li>PostgreSQL</li>
+              <li>Admin UI</li>
+              <li>Vercel</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://strwebery-peach.vercel.app/" class="btn btn-small btn-primary" target="_blank" rel="noopener">Live demo &rarr;</a>
+              <a href="https://github.com/chaimadk00/strwebery" class="btn btn-small btn-secondary" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Education / Experience Section -->
+<section id="experience" class="section experience reveal-on-scroll">
+  <h2 class="section-title">Education &amp; Experience</h2>
+  <p class="section-intro">
+    My academic milestones at ENSTA and hands-on professional experiences.
+  </p>
+
+  <div class="timeline-columns">
+
+    <!-- Education Column -->
+    <div class="timeline-block">
+      <h3>Education</h3>
+
+      <ol class="timeline">
+
+        <!-- Preparatory Class (2023 - 2025) -->
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <time class="timeline-date">2023 – 2025</time>
+            <span class="timeline-status-badge completed">Completed</span>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Preparatory Classes in Computer Science &amp; STEM</h4>
+            <p class="timeline-place">
+              Higher National School of Advanced Technologies (ENSTA)
+            </p>
+            <p>
+              Intensive two-year preparatory cycle establishing strong
+              foundations in advanced mathematics, discrete structures,
+              algorithmic problem solving in C, object-oriented programming
+              in Java, and physics.
+            </p>
+          </div>
+        </li>
+
+        <!-- Superior Class (2025 - Present) -->
+        <li class="timeline-item current">
+          <div class="timeline-meta">
+            <time class="timeline-date">2025 – Present</time>
+            <span class="timeline-status-badge">Current</span>
+          </div>
+
+          <div class="timeline-content">
+            <h4>
+              Superior Class in Computer Science
+              (Artificial Intelligence Specialty)
+            </h4>
+            <p class="timeline-place">
+              Higher National School of Advanced Technologies (ENSTA)
+            </p>
+            <p>
+              Cycle Supérieur engineering program. In-depth curriculum
+              focusing on Artificial Intelligence, Machine Learning,
+              Deep Learning, Intelligent Agent Architecture, Advanced
+              Algorithms, and Software Engineering.
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+
+
+    <!-- Experience Column -->
+    <div class="timeline-block">
+      <h3>Experience &amp; Practical Work</h3>
+
+      <ol class="timeline">
+
+        <!-- Internship at ASAL -->
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <time class="timeline-date">April 2026</time>
+            <span class="timeline-status-badge">Internship</span>
+          </div>
+
+          <div class="timeline-content">
+            <h4>Software &amp; Technical Intern</h4>
+            <p class="timeline-place">
+              Algerian Space Agency (ASAL)
+            </p>
+            <p>
+              Practical immersion exploring technical software applications,
+              data processing pipelines, and system architectures in a
+              national scientific institution.
+            </p>
+          </div>
+        </li>
+
+      
+
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact reveal-on-scroll">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-intro">Have a project, an internship opportunity, or a question? Send me a message and I will reply as soon as possible.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Information Card -->
+        <address class="contact-info">
+          <h3>Get in Touch</h3>
+          <p class="contact-subtext">Feel free to reach out via email, phone, or connect through social platforms.</p>
+          <ul>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:ac.dokkar@ensta.edu.dz">ac.dokkar@ensta.edu.dz</a>
+            </li>
+            <li>
+              <strong>Phone:</strong>
+              <a href="tel:+213552411943">+213 552 411 943</a>
+            </li>
+            <li>
+              <strong>Location:</strong>
+              <span>Algeria</span>
+            </li>
+            <li>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/chaimadk00" target="_blank" rel="noopener">github.com/chaimadk00</a>
+            </li>
+            <li>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/dokkar-chaima-2b5a9b317" target="_blank" rel="noopener">linkedin.com/in/dokkar-chaima-2b5a9b317</a>
+            </li>
+          </ul>
+        </address>
+
+       
+
+          
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Chaima Dokkar. All rights reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/chaimadk00" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/dokkar-chaima-2b5a9b317" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a></li>
+      <li><a href="mailto:ac.dokkar@ensta.edu.dz" aria-label="Email Chaima Dokkar">Email</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
